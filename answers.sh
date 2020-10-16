@@ -20,3 +20,16 @@ FROM students WHERE name='Layal'
 UPDATE graduates SET Graduation='08/09/2018' WHERE name='Layal'
 DELETE FROM students
 WHERE name='Layal'
+
+
+
+
+
+
+#### Count & Filter
+SELECT name,MAX(Points) as highest FROM students
+SELECT AVG(Points) as average FROM students
+SELECT COUNT(Points) FROM students WHERE Points='500' 
+SELECT name FROM students WHERE name like '%s%'
+SELECT * FROM students ORDER BY Points DESC
+
