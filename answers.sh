@@ -21,8 +21,12 @@ UPDATE graduates SET Graduation='08/09/2018' WHERE name='Layal'
 DELETE FROM students
 WHERE name='Layal'
 
+#### Joins
+SELECT employees.name, companies.name, companies.Date FROM companies INNER JOIN employees on companies.ID=employees.ID
 
+SELECT employees.name FROM companies INNER JOIN employees on companies.ID=employees.ID WHERE companies.Date<'2000'
 
+SELECT companies.Name FROM companies INNER JOIN employees on companies.ID=employees.ID WHERE Role='Graphic Designer'
 
 
 
